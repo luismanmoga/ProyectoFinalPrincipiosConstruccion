@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" minHeight="-Infinity" minWidth="400.0" prefHeight="250.0" prefWidth="320.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="serviciosocialfei.controlador.MensajesGUIController">
+  <children>
+    <Rectangle arcHeight="50.0" arcWidth="50.0" fill="WHITE" height="97.0" layoutX="25.0" layoutY="85.0" stroke="BLACK" strokeType="INSIDE" width="351.0" />
+    <Rectangle arcHeight="50.0" arcWidth="50.0" height="54.0" layoutX="200.0" layoutY="14.0" smooth="true" stroke="$x1" strokeType="INSIDE" width="321.0">
+      <fill>
+        <Color blue="0.616" green="0.322" red="0.094" fx:id="x1" />
+      </fill>
+    </Rectangle>
+    <Text layoutX="93.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mensaje">
+      <font>
+        <Font size="20.0" />
+      </font>
+    </Text>
+    <Label layoutX="37.0" layoutY="101.0" prefHeight="66.0" prefWidth="324.0" text="Aquí va el mensaje" textOverrun="CLIP" wrapText="true">
+      <font>
+        <Font size="15.0" fx:id="x3" />
+      </font>
+    </Label>
+    <Rectangle arcHeight="5.0" arcWidth="5.0" height="15.0" layoutX="0.0" layoutY="229.0" strokeType="INSIDE" width="400.0">
+      <fill>
+        <Color blue="0.337" green="0.678" red="0.157" fx:id="x2" />
+      </fill>
+      <stroke>
+        <Color blue="0.337" green="0.678" red="0.157" fx:id="x4" />
+      </stroke>
+    </Rectangle>
+    <Button font="$x3" layoutX="296.0" layoutY="193.0" minHeight="27.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="80.0" text="Aceptar" />
+    <ImageView fitHeight="47.0" fitWidth="47.0" layoutX="37.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+        <Image url="@../icono/alerta.png" />
+      </image>
+    </ImageView>
+    <Polygon fill="$x4" layoutX="400.0" layoutY="50.0" scaleX="1.5380680727878586" scaleY="0.5483565251156688" stroke="$x4" strokeType="INSIDE">
+      <points>
+        <Double fx:value="-50.0" />
+        <Double fx:value="40.0" />
+        <Double fx:value="50.0" />
+        <Double fx:value="40.0" />
+        <Double fx:value="0.0" />
+        <Double fx:value="-60.0" />
+      </points>
+    </Polygon>
+  </children>
+</AnchorPane>
