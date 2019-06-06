@@ -7,7 +7,10 @@ package serviciosocialfei.controlador;
 
 import java.net.URL;
 import java.util.ResourceBundle;
+import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.Button;
+import javafx.stage.Stage;
 
 /**
  * FXML Controller class
@@ -15,7 +18,14 @@ import javafx.fxml.Initializable;
  * @author luis_
  */
 public class SubirDocumentosAsignacionGUIController implements Initializable {
-
+    
+    @FXML private Button btnCancelar;
+    @FXML private void btnCancelarAction(){
+        Stage stage = (Stage) btnCancelar.getScene().getWindow();
+        stage.close(); 
+    }
+    
+    
     /**
      * Initializes the controller class.
      */

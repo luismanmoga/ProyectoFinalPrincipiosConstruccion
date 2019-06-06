@@ -116,7 +116,7 @@ public class InicioSesion implements Initializable {
                     Scene escena = new Scene(root);
                     ventana.setScene(escena);
 
-                    ventana.setTitle("Auxiliar Técnico");
+                    ventana.setTitle("Técnico Auxiliar");
 
                 } catch (IOException ex) {
                     Logger.getLogger(InicioSesion.class.getName()).log(Level.SEVERE, null, ex);
@@ -143,7 +143,7 @@ public class InicioSesion implements Initializable {
      */
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        conexion = new Conexion("localhost", "serviciosocial", "root", "aNIMO1742");
+        conexion = new Conexion("localhost", "serviciosocial", "proyectoSS", "12345");
         txtMatricula.setText("");
         txtPassword.setText("");
         ventana = null;

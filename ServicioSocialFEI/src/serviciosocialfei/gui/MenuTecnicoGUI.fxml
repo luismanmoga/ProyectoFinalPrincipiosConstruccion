@@ -18,12 +18,12 @@
         <Color blue="0.750" green="0.750" red="0.750" fx:id="x1" />
       </fill>
     </Rectangle>
-    <Text layoutX="14.0" layoutY="79.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Inicio">
+    <Text layoutX="14.0" layoutY="78.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Inicio">
       <font>
-        <Font name="Tahoma" size="65.0" />
+        <Font size="59.0" />
       </font>
     </Text>
-    <Button layoutX="92.0" layoutY="107.0" minHeight="120.0" minWidth="245.0" mnemonicParsing="false" prefHeight="120.0" prefWidth="275.0" text="Expedientes Alumno" textOverrun="CLIP">
+    <Button fx:id="btnExpediente" layoutX="92.0" layoutY="107.0" minHeight="75.0" minWidth="245.0" mnemonicParsing="false" onAction="#btnExpedienteAction" prefHeight="75.0" prefWidth="292.0" text="      Expedientes " textOverrun="CLIP">
       <effect>
         <Glow level="0.0">
           <input>
@@ -32,22 +32,15 @@
         </Glow>
       </effect>
       <font>
-        <Font name="System Bold" size="15.0" fx:id="x2" />
+        <Font name="System Bold" size="14.0" fx:id="x2" />
       </font>
-      <graphic>
-        <ImageView fitHeight="150.0" fitWidth="150.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
-          <image>
-            <Image url="@../icono/user.png" />
-          </image>
-        </ImageView>
-      </graphic>
     </Button>
-    <Button font="$x2" layoutX="92.0" layoutY="244.0" minHeight="120.0" minWidth="275.0" mnemonicParsing="false" prefHeight="120.0" prefWidth="275.0" text="Organizaciones    " textAlignment="RIGHT" textOverrun="CLIP" wrapText="false">
+    <Button id="btnOrganizaciones" font="$x2" layoutX="92.0" layoutY="293.0" minHeight="75.0" minWidth="275.0" mnemonicParsing="false" prefHeight="75.0" prefWidth="292.0" text="Organizaciones    " textAlignment="RIGHT" textOverrun="CLIP" wrapText="false">
       <effect>
         <ColorAdjust hue="-0.8931297709923665" saturation="0.44274809160305373" />
       </effect>
       <graphic>
-        <ImageView fitHeight="150.0" fitWidth="110.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true" x="0.0" y="0.0">
+        <ImageView fitHeight="150.0" fitWidth="65.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true" x="0.0" y="0.0">
           <image>
             <Image url="@../icono/edificio.png" />
           </image>
@@ -61,5 +54,11 @@
       </fill>
     </Rectangle>
     <Rectangle arcHeight="5.0" arcWidth="5.0" fill="$x1" height="285.0" layoutX="401.0" layoutY="95.0" stroke="$x1" strokeType="INSIDE" width="179.0" />
+    <ImageView fitHeight="150.0" fitWidth="80.0" layoutX="124.0" layoutY="107.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+      <image>
+        <Image url="@../icono/user.png" />
+      </image>
+    </ImageView>
+    <Button fx:id="btnContacto" layoutX="93.0" layoutY="200.0" mnemonicParsing="false" prefHeight="75.0" prefWidth="292.0" text="Button" />
   </children>
 </AnchorPane>

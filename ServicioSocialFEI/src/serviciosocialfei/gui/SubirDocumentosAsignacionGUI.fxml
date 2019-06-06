@@ -30,7 +30,7 @@
         </Text>
         <Text font="$x1" layoutX="14.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Seleccionar Archivo" />
         <Button id="botonSeleccionar" layoutX="176.0" layoutY="49.0" mnemonicParsing="false" text="Seleccionar" />
-        <Button id="botonSubir" layoutX="122.0" layoutY="98.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="53.07177734375" text="Subir" />
+        <Button id="botonSubir" layoutX="111.0" layoutY="98.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="65.0" text="Subir" />
         <Rectangle arcHeight="50.0" arcWidth="50.0" height="51.0" layoutX="-75.0" layoutY="-78.0" stroke="$x2" strokeType="INSIDE" width="200.0">
           <fill>
             <Color blue="0.616" green="0.322" red="0.094" fx:id="x2" />
@@ -46,7 +46,7 @@
             <Font size="25.0" />
           </font>
         </Text>
-        <Button id="botonCancelar" layoutX="190.0" layoutY="98.0" mnemonicParsing="false" prefHeight="26.6015625" text="Cancelar" />
+        <Button id="botonCancelar" fx:id="btnCancelar" layoutX="190.0" layoutY="98.0" mnemonicParsing="false" onAction="#btnCancelarAction" prefHeight="26.6015625" text="Cancelar" />
       </children>
     </AnchorPane>
     <Rectangle arcHeight="0.0" arcWidth="0.0" height="15.9609375" layoutX="0.0" layoutY="230.0" stroke="$x3" strokeType="INSIDE" width="293.0">

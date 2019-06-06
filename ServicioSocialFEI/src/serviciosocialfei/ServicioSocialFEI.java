@@ -19,7 +19,7 @@ public class ServicioSocialFEI extends Application {
     
     @Override
     public void start(Stage stage) throws Exception {
-        Parent root = FXMLLoader.load(getClass().getResource("/serviciosocialfei/gui/FXMLDocument.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("/serviciosocialfei/gui/InicioSesionGUI.fxml"));
         
         Scene scene = new Scene(root);
         
