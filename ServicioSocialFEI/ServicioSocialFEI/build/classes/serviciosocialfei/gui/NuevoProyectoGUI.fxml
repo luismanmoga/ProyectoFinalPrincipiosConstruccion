@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="560.5" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="serviciosocialfei.controlador.NuevoProyectoGUIController">
+  <children>
+    <Text layoutX="25.0" layoutY="129.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Responsable de Proyecto">
+      <font>
+        <Font size="15.0" />
+      </font>
+    </Text>
+    <ComboBox layoutX="217.0" layoutY="110.0" prefHeight="24.0" prefWidth="269.0">
+      <items>
+        <FXCollections fx:factory="observableArrayList">
+          <String fx:value="Item 1" />
+          <String fx:value="Item 2" />
+          <String fx:value="Item 3" />
+        </FXCollections>
+      </items>
+    </ComboBox>
+    <Line endX="400.0" layoutX="125.0" layoutY="155.0" startX="-100.0" />
+    <Text layoutX="25.0" layoutY="198.0" strokeType="OUTSIDE" strokeWidth="0.0" text="" />
+    <GridPane alignment="TOP_CENTER" hgap="5.0" layoutX="61.0" layoutY="173.0" prefWidth="465.0" vgap="10.0">
+      <children>
+        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Nombre del proyecto:" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Descripción general:" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Objetivos generales:" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Objetivos inmediatos:" GridPane.columnIndex="0" GridPane.rowIndex="3" />
+        <TextField prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+        <TextField prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+        <TextField prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+        <TextField prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+      </children>
+      <columnConstraints>
+        <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" maxWidth="273.0" minWidth="10.0" prefWidth="122.0" />
+        <ColumnConstraints hgrow="SOMETIMES" maxWidth="424.0" minWidth="10.0" prefWidth="424.0" />
+      </columnConstraints>
+      <rowConstraints>
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      </rowConstraints>
+    </GridPane>
+    <Rectangle arcHeight="45.0" arcWidth="44.0" fill="#18529d" height="70.0" layoutX="-21.0" layoutY="14.0" strokeType="INSIDE" strokeWidth="0.0" width="358.0">
+      <stroke>
+        <Color blue="0.875" green="0.875" red="0.875" fx:id="x1" />
+      </stroke>
+    </Rectangle>
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#28ad56" height="15.9609375" layoutX="0.0" layoutY="378.0" stroke="$x1" strokeType="INSIDE" width="560.5" />
+    <Text layoutX="346.0" layoutY="59.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nuevo Proyecto">
+      <font>
+        <Font size="25.0" />
+      </font>
+    </Text>
+    <Button layoutX="446.0" layoutY="330.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="80.0" text="Cancelar" />
+    <Button layoutX="317.0" layoutY="330.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="80.0" text="Aceptar" />
+    <Button layoutX="499.0" layoutY="109.0" minHeight="23.7646484375" minWidth="24.0" mnemonicParsing="false" prefHeight="23.7646484375" prefWidth="24.0" text="">
+      <effect>
+        <DropShadow>
+          <input>
+            <Lighting>
+              <bumpInput>
+                <Shadow />
+              </bumpInput>
+              <light>
+                <javafx.scene.effect.Light.Distant />
+              </light>
+            </Lighting>
+          </input>
+        </DropShadow>
+      </effect>
+      <graphic>
+        <ImageView fitHeight="50.0" fitWidth="30.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+          <image>
+            <Image url="@../icono/61183.png" />
+          </image>
+        </ImageView>
+      </graphic>
+    </Button>
+  </children>
+</AnchorPane>

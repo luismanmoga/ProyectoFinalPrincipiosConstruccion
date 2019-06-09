@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="252.0" prefWidth="293.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="serviciosocialfei.controlador.SubirDocumentosAsignacionGUIController">
+  <children>
+    <AnchorPane layoutX="14.0" layoutY="90.0" prefHeight="140.0" prefWidth="265.0">
+      <children>
+        <ComboBox id="cbTipoArchivo" layoutX="132.0" layoutY="9.0" prefHeight="21.0" prefWidth="124.0">
+          <items>
+            <FXCollections fx:factory="observableArrayList">
+              <String fx:value="Item 1" />
+              <String fx:value="Item 2" />
+              <String fx:value="Item 3" />
+            </FXCollections>
+          </items>
+        </ComboBox>
+        <Text layoutX="14.0" layoutY="22.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tipo de archivo">
+          <font>
+            <Font size="15.0" fx:id="x1" />
+          </font>
+        </Text>
+        <Text font="$x1" layoutX="14.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Seleccionar Archivo" />
+        <Button id="botonSeleccionar" layoutX="176.0" layoutY="49.0" mnemonicParsing="false" text="Seleccionar" />
+        <Button id="botonSubir" layoutX="111.0" layoutY="98.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="65.0" text="Subir" />
+        <Rectangle arcHeight="50.0" arcWidth="50.0" height="51.0" layoutX="-75.0" layoutY="-78.0" stroke="$x2" strokeType="INSIDE" width="200.0">
+          <fill>
+            <Color blue="0.616" green="0.322" red="0.094" fx:id="x2" />
+          </fill>
+        </Rectangle>
+        <Text layoutX="132.0" layoutY="-58.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Subir">
+          <font>
+            <Font size="20.0" />
+          </font>
+        </Text>
+        <Text layoutX="132.0" layoutY="-31.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Documento">
+          <font>
+            <Font size="25.0" />
+          </font>
+        </Text>
+        <Button id="botonCancelar" fx:id="btnCancelar" layoutX="190.0" layoutY="98.0" mnemonicParsing="false" onAction="#btnCancelarAction" prefHeight="26.6015625" text="Cancelar" />
+      </children>
+    </AnchorPane>
+    <Rectangle arcHeight="0.0" arcWidth="0.0" height="15.9609375" layoutX="0.0" layoutY="230.0" stroke="$x3" strokeType="INSIDE" width="293.0">
+      <fill>
+        <Color blue="0.337" green="0.678" red="0.157" fx:id="x3" />
+      </fill>
+    </Rectangle>
+  </children>
+</AnchorPane>

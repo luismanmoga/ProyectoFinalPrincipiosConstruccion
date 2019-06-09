@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" minWidth="599.0" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="serviciosocialfei.controlador.MenuTecnicoGUIController">
+  <children>
+    <Rectangle arcHeight="5.0" arcWidth="5.0" height="285.0" layoutX="69.0" layoutY="95.0" stroke="$x1" strokeType="INSIDE" width="322.0">
+      <fill>
+        <Color blue="0.750" green="0.750" red="0.750" fx:id="x1" />
+      </fill>
+    </Rectangle>
+    <Text layoutX="14.0" layoutY="78.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Inicio">
+      <font>
+        <Font size="59.0" />
+      </font>
+    </Text>
+    <Button fx:id="btnExpediente" layoutX="92.0" layoutY="107.0" minHeight="75.0" minWidth="245.0" mnemonicParsing="false" onAction="#btnExpedienteAction" prefHeight="75.0" prefWidth="292.0" text="      Expedientes " textOverrun="CLIP">
+      <effect>
+        <Glow level="0.0">
+          <input>
+            <ColorAdjust brightness="-0.07633587786259544" contrast="0.2290076335877862" hue="0.6564885496183206" saturation="0.35114503816793885" />
+          </input>
+        </Glow>
+      </effect>
+      <font>
+        <Font name="System Bold" size="14.0" fx:id="x2" />
+      </font>
+    </Button>
+    <Button id="btnOrganizaciones" font="$x2" layoutX="92.0" layoutY="293.0" minHeight="75.0" minWidth="275.0" mnemonicParsing="false" prefHeight="75.0" prefWidth="292.0" text="Organizaciones    " textAlignment="RIGHT" textOverrun="CLIP" wrapText="false">
+      <effect>
+        <ColorAdjust hue="-0.8931297709923665" saturation="0.44274809160305373" />
+      </effect>
+      <graphic>
+        <ImageView fitHeight="150.0" fitWidth="65.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true" x="0.0" y="0.0">
+          <image>
+            <Image url="@../icono/edificio.png" />
+          </image>
+        </ImageView>
+      </graphic>
+    </Button>
+    <Line endX="-100.0" endY="281.0" layoutX="156.0" layoutY="97.0" startX="-100.0" strokeWidth="4.0" />
+    <Rectangle arcHeight="50.0" arcWidth="50.0" height="64.42529296875" layoutX="179.0" layoutY="26.0" stroke="$x3" strokeType="INSIDE" width="443.0">
+      <fill>
+        <Color blue="0.616" green="0.322" red="0.094" fx:id="x3" />
+      </fill>
+    </Rectangle>
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="$x1" height="285.0" layoutX="401.0" layoutY="95.0" stroke="$x1" strokeType="INSIDE" width="179.0" />
+    <ImageView fitHeight="150.0" fitWidth="80.0" layoutX="124.0" layoutY="107.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+      <image>
+        <Image url="@../icono/user.png" />
+      </image>
+    </ImageView>
+    <Button fx:id="btnContacto" layoutX="93.0" layoutY="200.0" mnemonicParsing="false" prefHeight="75.0" prefWidth="292.0" text="Button" />
+  </children>
+</AnchorPane>
