@@ -4,6 +4,7 @@ Fecha: 29/05/2019
 */
 package serviciosocialfei.modelo;
 
+import java.time.LocalDate;
 import javafx.beans.property.SimpleStringProperty;
 
 public class Memoria {
@@ -25,7 +26,15 @@ public class Memoria {
     
     public String getNombreArchivo() {
         return nombreArchivo.get();
-    }    
+    }
+
+    public void setEstado(String estado) {
+        this.estado.set(estado);
+    }
+    
+    public String getEstado() {
+        return estado.get();
+    }
     
     public void validarMemoria() {
         estado.set("Validado");
@@ -37,7 +46,7 @@ public class Memoria {
     
     public Memoria() {
         estado = new SimpleStringProperty("En revisión");
-        fechaCarga = new SimpleStringProperty();
+        fechaCarga = new SimpleStringProperty(LocalDate.now().toString());
         nombreArchivo = new SimpleStringProperty();
         
     }
