@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" minWidth="435.0000999999975" prefHeight="400.0" prefWidth="435.0000999999975" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="serviciosocialfei.controlador.Organizacion">
+  <children>
+    <Text layoutX="22.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Organizacion Vinculada">
+      <font>
+        <Font size="18.0" />
+      </font>
+    </Text>
+    <Pane layoutX="22.0" layoutY="70.0" prefHeight="316.0" prefWidth="391.0">
+      <children>
+        <GridPane alignment="CENTER_LEFT" disable="false" focusTraversable="false" gridLinesVisible="false" layoutX="37.0" layoutY="38.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="253.0" prefWidth="314.0" snapToPixel="true">
+          <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Sector:" GridPane.columnIndex="0" GridPane.rowIndex="4" />
+            <Text scaleX="0.9999965192563509" scaleY="1.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Correo:" GridPane.columnIndex="0" GridPane.rowIndex="5" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Nombre:" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Direccion:" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Ciudad:" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Estado:" GridPane.columnIndex="0" GridPane.rowIndex="3" />
+            <Label text="Label" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+            <Label text="Label" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Label text="Label" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Label text="Label" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Label text="Label" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Telefono:" GridPane.columnIndex="0" GridPane.rowIndex="6" />
+            <Label text="Label" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <Label text="Label" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+            <Label prefWidth="84.0" text="No. Alumnos   asignados:  " wrapText="true" GridPane.columnIndex="0" GridPane.rowIndex="7" />
+            <Label text="Label" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+          </children>
+          <columnConstraints>
+            <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" maxWidth="105.0" minWidth="10.0" prefWidth="79.0" />
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="135.0" minWidth="10.0" prefWidth="121.0" />
+          </columnConstraints>
+          <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          </rowConstraints>
+        </GridPane>
+      </children>
+    </Pane>
+    <Rectangle arcHeight="50.0" arcWidth="50.0" height="45.2451171875" layoutX="247.0" layoutY="14.0" stroke="$x1" strokeType="INSIDE" width="423.0">
+      <fill>
+        <Color blue="0.616" green="0.322" red="0.094" fx:id="x1" />
+      </fill>
+    </Rectangle>
+  </children>
+</AnchorPane>

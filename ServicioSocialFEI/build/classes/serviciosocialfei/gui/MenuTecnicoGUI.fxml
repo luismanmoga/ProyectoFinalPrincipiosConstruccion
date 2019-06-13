@@ -13,17 +13,17 @@
 
 <AnchorPane id="AnchorPane" minWidth="599.0" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="serviciosocialfei.controlador.MenuTecnicoGUIController">
   <children>
-    <Rectangle arcHeight="5.0" arcWidth="5.0" height="285.0" layoutX="69.0" layoutY="95.0" stroke="$x1" strokeType="INSIDE" width="322.0">
+    <Rectangle arcHeight="5.0" arcWidth="5.0" height="285.0" layoutX="32.0" layoutY="95.0" stroke="$x1" strokeType="INSIDE" width="322.0">
       <fill>
         <Color blue="0.750" green="0.750" red="0.750" fx:id="x1" />
       </fill>
     </Rectangle>
-    <Text layoutX="14.0" layoutY="78.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Inicio">
+    <Text layoutX="32.0" layoutY="71.0" scaleX="1.0000006405584707" scaleY="0.9464211444943692" strokeType="OUTSIDE" strokeWidth="0.0" text="Inicio">
       <font>
-        <Font size="59.0" />
+        <Font name="Trebuchet MS" size="50.0" />
       </font>
     </Text>
-    <Button fx:id="btnExpediente" layoutX="92.0" layoutY="107.0" minHeight="75.0" minWidth="245.0" mnemonicParsing="false" onAction="#btnExpedienteAction" prefHeight="75.0" prefWidth="292.0" text="      Expedientes " textOverrun="CLIP">
+    <Button fx:id="btnExpediente" layoutX="47.0" layoutY="107.0" minHeight="75.0" minWidth="245.0" mnemonicParsing="false" onAction="#btnExpedienteAction" prefHeight="75.0" prefWidth="292.0" text="      Expedientes " textOverrun="CLIP">
       <effect>
         <Glow level="0.0">
           <input>
@@ -35,7 +35,7 @@
         <Font name="System Bold" size="14.0" fx:id="x2" />
       </font>
     </Button>
-    <Button id="btnOrganizaciones" font="$x2" layoutX="92.0" layoutY="293.0" minHeight="75.0" minWidth="275.0" mnemonicParsing="false" prefHeight="75.0" prefWidth="292.0" text="Organizaciones    " textAlignment="RIGHT" textOverrun="CLIP" wrapText="false">
+    <Button fx:id="btnOrganizaciones" font="$x2" layoutX="47.0" layoutY="293.0" minHeight="75.0" minWidth="275.0" mnemonicParsing="false" onAction="#btnOrganizacionesAction" prefHeight="75.0" prefWidth="292.0" text="Organizaciones    " textAlignment="RIGHT" textOverrun="CLIP" wrapText="false">
       <effect>
         <ColorAdjust hue="-0.8931297709923665" saturation="0.44274809160305373" />
       </effect>
@@ -47,18 +47,34 @@
         </ImageView>
       </graphic>
     </Button>
-    <Line endX="-100.0" endY="281.0" layoutX="156.0" layoutY="97.0" startX="-100.0" strokeWidth="4.0" />
-    <Rectangle arcHeight="50.0" arcWidth="50.0" height="64.42529296875" layoutX="179.0" layoutY="26.0" stroke="$x3" strokeType="INSIDE" width="443.0">
+    <Rectangle arcHeight="50.0" arcWidth="50.0" height="64.42529296875" layoutX="179.0" layoutY="21.0" stroke="$x3" strokeType="INSIDE" width="443.0">
       <fill>
         <Color blue="0.616" green="0.322" red="0.094" fx:id="x3" />
       </fill>
     </Rectangle>
-    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="$x1" height="285.0" layoutX="401.0" layoutY="95.0" stroke="$x1" strokeType="INSIDE" width="179.0" />
-    <ImageView fitHeight="150.0" fitWidth="80.0" layoutX="124.0" layoutY="107.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="$x1" height="285.0" layoutX="370.0" layoutY="95.0" stroke="$x1" strokeType="INSIDE" width="210.0" />
+    <ImageView fitHeight="150.0" fitWidth="80.0" layoutX="79.0" layoutY="107.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
       <image>
         <Image url="@../icono/user.png" />
       </image>
     </ImageView>
-    <Button fx:id="btnContacto" layoutX="93.0" layoutY="200.0" mnemonicParsing="false" prefHeight="75.0" prefWidth="292.0" text="Button" />
+    <Button fx:id="btnContacto" contentDisplay="CENTER" disable="false" focusTraversable="true" font="$x2" layoutX="47.0" layoutY="200.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="75.0" prefWidth="292.0" text="Contacto" textAlignment="LEFT" textOverrun="WORD_ELLIPSIS" underline="false" visible="true" wrapText="false">
+      <graphic>
+        <ImageView fitHeight="50.0" fitWidth="75.0" focusTraversable="true" mouseTransparent="true" pickOnBounds="true" preserveRatio="true" translateX="-75.0" x="0.0">
+          <image>
+            <Image url="@../icono/contacto.png" />
+          </image>
+        </ImageView>
+      </graphic>
+    </Button>
+    <Button fx:id="btnSalir" cancelButton="false" defaultButton="false" layoutX="430.0" layoutY="321.0" mnemonicParsing="false" onAction="#btnSalirAction" text="Salir">
+      <graphic>
+        <ImageView fitHeight="150.0" fitWidth="35.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+          <image>
+            <Image url="@../icono/salir.png" />
+          </image>
+        </ImageView>
+      </graphic>
+    </Button>
   </children>
 </AnchorPane>

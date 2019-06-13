@@ -21,12 +21,12 @@
       </font>
     </Text>
     <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#9f9f9f" height="80.0" layoutX="982.0" layoutY="105.0" stroke="BLACK" strokeType="INSIDE" width="80.0" />
-    <Label id="labNombreAlumno" layoutX="702.0" layoutY="116.0" text="Nombre Completo del Alumno">
+    <Label id="labNombreAlumno" fx:id="nombreAlumno" layoutX="680.0" layoutY="116.0" text="Nombre Completo del Alumno">
       <font>
         <Font size="18.0" fx:id="x5" />
       </font>
     </Label>
-    <Label id="labMatricula" font="$x5" layoutX="890.0" layoutY="148.0" text="Matrícula" />
+    <Label id="labMatricula" fx:id="matriculaAlumno" font="$x5" layoutX="868.0" layoutY="148.0" text="Matrícula" />
     <Label id="labelCalificacion" layoutX="1005.0" layoutY="111.0" text="0">
       <font>
         <Font name="Arial" size="65.0" />
@@ -90,7 +90,7 @@
         <Label fx:id="nombreEncargadoProyecto" text="null" GridPane.columnIndex="1" GridPane.rowIndex="1" />
         <Label fx:id="telEncargadoProyecto" text="null" GridPane.columnIndex="1" GridPane.rowIndex="2" />
         <Label id="correoEncargadoProy" fx:id="correoEncargadoProyecto" text="null" GridPane.columnIndex="1" GridPane.rowIndex="3" />
-        <Label alignment="CENTER_LEFT" font="$x3" minWidth="88.0" prefHeight="39.0" prefWidth="88.0" text="Encargado del Proyecto:" textAlignment="LEFT" textFill="BLACK" textOverrun="CLIP" wrapText="true" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+        <Label alignment="CENTER_LEFT" font="$x3" minWidth="88.0" prefHeight="39.0" prefWidth="93.5035400390625" text="Encargado del Proyecto:" textAlignment="LEFT" textFill="BLACK" textOverrun="CLIP" wrapText="true" GridPane.columnIndex="0" GridPane.rowIndex="1" />
       </children>
       <columnConstraints>
         <ColumnConstraints hgrow="SOMETIMES" maxWidth="213.0" minWidth="10.0" prefWidth="97.0" />
@@ -176,7 +176,7 @@
     </Button>
     <AnchorPane id="AnchorPane" layoutX="429.0" layoutY="294.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="-1.0" prefWidth="-1.0">
       <children>
-        <Button id="botonAgregarRM" fx:id="btnAgregarRM" alignment="CENTER" contentDisplay="LEFT" focusTraversable="true" layoutX="0.0" layoutY="6.0" minHeight="51.74560546875" minWidth="65.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="162.0" text="Agregar" textAlignment="LEFT" textOverrun="CLIP" visible="true" wrapText="false">
+        <Button id="botonAgregarRM" fx:id="btnAgregarRM" alignment="CENTER" contentDisplay="LEFT" focusTraversable="true" layoutX="0.0" layoutY="6.0" minHeight="51.74560546875" minWidth="65.0" mnemonicParsing="false" onAction="#btnAgregarRMAction" prefHeight="52.0" prefWidth="162.0" text="Agregar" textAlignment="LEFT" textOverrun="CLIP" visible="true" wrapText="false">
           <graphic>
             <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" smooth="true">
               <image>
